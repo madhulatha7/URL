@@ -1,0 +1,555 @@
+<!doctype html>
+<html lan="es">
+<head>
+<title>10th url</title>
+<meta charset="utf-8">
+<link type="text/css" rel="stylesheet" href="1.css" >
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+				 function resizeHeaderOnScroll() {
+  const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+  shrinkOn = 250,
+  headerEl = document.getElementById('header');
+  
+  if (distanceY > shrinkOn) {
+    headerEl.classList.add("smaller");
+  } else {
+    headerEl.classList.remove("smaller");
+  }
+}
+
+window.addEventListener('scroll', resizeHeaderOnScroll);
+
+	function validateNonEmpty(){
+		var fname=document.myForm.fname;
+	if(fname.value.length=="") {
+		document.getElementById("name").innerHTML="PLEASE ENTER DATA";
+		return false;
+	}else{
+		document.getElementById("name").innerHTML="";
+		return true;
+	}
+}			
+</script>
+</head>
+<body>
+	
+    <header id="header">		
+      <img id="logo" src="index.png" alt="logo">    
+      
+      <div class="container">
+		<div class="dropdown" id="languages">
+		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Selecciona un idioma
+		<span class="caret"></span></button>
+		<ul class="dropdown-menu ">
+		<li><a href="#">العربية</a></li>
+		<li><a href="#">中文(中华人民共和国)</a></li>
+		<li><a href="#">中文(台灣)</a></li>
+		<li><a href="#">English (United Kingdom)</a></li>
+		<li><a href="#">日本語</a></li>
+		<li><a href="#">한국어</a></li>
+		<li><a href="#">portugu&#234;s</a></li>
+		<li><a href="#">русский</a></li>
+		<li><a href="#">espa&#241;ol</a></li>
+		<li><a href="#">ไทย</a></li>
+		<li><a href="#">T&#252;rk&#231;e</a></li>
+		<li><a href="#">Ti&#234;́ng Việt</a></li>
+		<li><a href="#">English</a></li>
+		</ul>
+		
+		</div>
+    </div>
+    </header>
+    <div id="bodyimage">
+		
+    <div id="para">
+<div id="border"></div>
+ <p id="first">Estudia inglés. Explora. </p>
+ <p id="second">Logra tus Metas.</p>
+
+<p id="third"><sub>i</sub>Contacta a ELS!</p>
+<div id="mpara">
+ <p>Estudia inglés. Explora. Logra tus Metas.</p>
+ <p><sub>i</sub>Contacta a ELS!</p>
+ </div>
+  
+    </div>
+    </div>
+    <div class="sideba">
+    <form name="myForm" action="#" method="get" onsubmit="submitFunction">
+    <div class="tab">
+		
+	<h1 id="nv"><sub>i</sub>Contacta a ELS!</h1>
+	
+	<p>	<span class="star">*</span> Nombre</p>
+	<p><input  name="fname" type="text" size="32" onchange="validateNonEmpty();" /> <br>
+	<p id="name"></p>
+	<p> <span class="star">*</span>Apellido</p>
+	<p><input type="text" name="name" value=""> <br>
+	<div class="tableRow">
+	<span class="star">*</span>Sexo<br>
+	<input type="radio" name="Sexo" value="Masculino">Masculino<br>
+	<input type="radio" name="Sexo" value="Femenino" >Femenino<br>
+	</div>
+	<p><span class="star">*</span> Correo electrónico</p>
+	<p><input type="text" name="name" value=""><br>
+	<p><span class="star">*</span>Número de teléfono/número de teléfono móvil </p>
+	<p> <input type="text" name="name" value="">
+	<p><span class="star">*</span>País de residencia</p>
+<p class="inset">
+	<select name="cn">
+	<option value=""></option>
+<option value="AA">Aruba</option>
+<option value="AC">Antigua y Barbuda</option>
+<option value="AE">Emiratos &#193;rabes Unidos</option>
+<option value="AF">Afganist&#225;n</option>
+<option value="AG">Argelia</option>
+<option value="AJ">Azerbaiy&#225;n</option>
+<option value="AL">Albania</option>
+<option value="AM">Armenia</option>
+<option value="AN">Andorra</option>
+<option value="AO">Angola</option>
+<option value="AR">Argentina</option>
+<option value="AS">Australia</option>
+<option value="AT">Islas Ashmore y Cartier</option>
+<option value="AU">Austria</option>
+<option value="AUS">Australia</option>
+<option value="AV">Anguilla</option>
+<option value="BA">Bahrein</option>
+<option value="BB">Barbados</option>
+<option value="BC">Botsuana</option>
+<option value="BD">Bermudas</option>
+<option value="BE">B&#233;lgica</option>
+<option value="BF">Bahamas</option>
+<option value="BG">Bangladesh</option>
+<option value="BH">Belice</option>
+<option value="BK">Bosnia-Herzegovina</option>
+<option value="BL">Bolivia</option>
+<option value="BM">Birmania</option>
+<option value="BN">Ben&#237;n</option>
+<option value="BO">Bielorrusia</option>
+<option value="BP">Islas Salom&#243;n</option>
+<option value="BR">Brasil</option>
+<option value="BS">Bassas da India</option>
+<option value="BT">But&#225;n</option>
+<option value="BU">Bulgaria</option>
+<option value="BV">Isla Bouvet</option>
+<option value="BX">Brun&#233;i</option>
+<option value="BY">Burundi</option>
+<option value="CA">Canad&#225;</option>
+<option value="CB">Camboya</option>
+<option value="CD">Chad</option>
+<option value="CE">Sri Lanka</option>
+<option value="CF">Congo</option>
+<option value="CG">Rep&#250;blica Democr&#225;tica del Congo</option>
+<option value="CH">China</option>
+<option value="CI">Chile</option>
+<option value="CJ">Islas Caim&#225;n</option>
+<option value="CK">Islas Cocos (Keeling)</option>
+<option value="CM">Camer&#250;n</option>
+<option value="CN">Comores</option>
+<option value="CO">Colombia</option>
+<option value="CR">Islas del Mar del Coral</option>
+<option value="CS">Costa Rica</option>
+<option value="CT">Rep&#250;blica Centroafricana</option>
+<option value="CU">Cuba</option>
+<option value="CV">Cabo Verde</option>
+<option value="CW">Islas Cook</option>
+<option value="CY">Chipre</option>
+<option value="DA">Dinamarca</option>
+<option value="DJ">Djibouti</option>
+<option value="DO">Dominica</option>
+<option value="DR">Rep&#250;blica Dominicana</option>
+<option value="EC">Ecuador</option>
+<option value="EG">Egipto</option>
+<option value="EI ">Irlanda</option>
+<option value="EK">Guinea Ecuatorial</option>
+<option value="EN">Estonia</option>
+<option value="ER">Eritrea</option>
+<option value="ES">El Salvador</option>
+<option value="ET">Etiop&#237;a</option>
+<option value="EU">Isla Europa</option>
+<option value="EZ">Rep&#250;blica Checa</option>
+<option value="FG">Guayana Francesa</option>
+<option value="FI">Finlandia</option>
+<option value="FJ">Fiyi</option>
+<option value="FK">Islas Falkland (Malvinas)</option>
+<option value="FM">Estados Federados de Micronesia</option>
+<option value="FO">Islas Feroe</option>
+<option value="FP">Polinesia Francesa</option>
+<option value="FR">Francia</option>
+<option value="FS">Tierras Australes y Ant&#225;rticas Francesas</option>
+<option value="GA">Gambia</option>
+<option value="GB">Gab&#243;n</option>
+<option value="GG">Georgia</option>
+<option value="GH">Ghana</option>
+<option value="GI">Gibraltar</option>
+<option value="GJ">Granada</option>
+<option value="GK">Guernsey</option>
+<option value="GL">Groenlandia</option>
+<option value="GM">Alemania</option>
+<option value="GO">Islas Glorioso</option>
+<option value="GP">Guadalupe</option>
+<option value="GR">Grecia</option>
+<option value="GT">Guatemala</option>
+<option value="GV">Guinea</option>
+<option value="GY">Guyana</option>
+<option value="GZ">Franja de Gaza</option>
+<option value="HA">Hait&#237;</option>
+<option value="HK">Hong Kong</option>
+<option value="HM">Islas Heard y McDonald</option>
+<option value="HO">Honduras</option>
+<option value="HR">Croacia</option>
+<option value="HU">Hungr&#237;a</option>
+<option value="IC">Islandia</option>
+<option value="ID">Indonesia</option>
+<option value="IM">Isla de Man</option>
+<option value="IN">India</option>
+<option value="IO">Territorio Brit&#225;nico del Oc&#233;ano &#205;ndico</option>
+<option value="IP">Isla Clipperton</option>
+<option value="IR">Ir&#225;n</option>
+<option value="IS">Israel</option>
+<option value="IT">Italia</option>
+<option value="IV">Costa de Marfil</option>
+<option value="IZ">Iraq</option>
+<option value="JA">Jap&#243;n</option>
+<option value="JE">Jersey</option>
+<option value="JM">Jamaica</option>
+<option value="JN">Jan Mayen</option>
+<option value="JO">Jordania</option>
+<option value="JU">Isla Juan de Nova</option>
+<option value="KE">Kenia</option>
+<option value="KG">Kirguist&#225;n</option>
+<option value="KN">Corea del Norte</option>
+<option value="KR">Kiribati</option>
+<option value="KS">Corea del Sur</option>
+<option value="KT">Isla de Navidad</option>
+<option value="KU">Kuwait</option>
+<option value="KV">Kosovo</option>
+<option value="KZ">Kazajst&#225;n</option>
+<option value="LA">Laos</option>
+<option value="LE">L&#237;bano</option>
+<option value="LG">Letonia</option>
+<option value="LH">Lituania</option>
+<option value="LI">Liberia</option>
+<option value="LO">Eslovaquia</option>
+<option value="LS">Liechtenstein</option>
+<option value="LT">Lesotho</option>
+<option value="LU">Luxemburgo</option>
+<option value="LY">Libia</option>
+<option value="MA">Madagascar</option>
+<option value="MB">Martinica</option>
+<option value="MC">Macao</option>
+<option value="MD">Moldavia</option>
+<option value="MF">Mayotte</option>
+<option value="MG">Mongolia</option>
+<option value="MH">Montserrat</option>
+<option value="MI">Malawi</option>
+<option value="MK">Macedonia</option>
+<option value="ML">Mali</option>
+<option value="MN">M&#243;naco</option>
+<option value="MO">Marruecos</option>
+<option value="MP">Mauricio</option>
+<option value="MR">Mauritania</option>
+<option value="MT">Malta</option>
+<option value="MU">Om&#225;n</option>
+<option value="MV">Maldivas</option>
+<option value="MW">Montenegro</option>
+<option value="MX">M&#233;xico</option>
+<option value="MY">Malasia</option>
+<option value="MZ">Mozambique</option>
+<option value="NC">Nueva Caledonia</option>
+<option value="NE">Niue</option>
+<option value="NF">Isla Norfolk</option>
+<option value="NG">Niger</option>
+<option value="NH">Vanuatu</option>
+<option value="NI">Nigeria</option>
+<option value="NL">Pa&#237;ses Bajos</option>
+<option value="NO">Noruega</option>
+<option value="NP">Nepal</option>
+<option value="NR">Nauru</option>
+<option value="NS">Suriname</option>
+<option value="NU">Nicaragua</option>
+<option value="NZ">Nueva Zelanda</option>
+<option value="PA">Paraguay</option>
+<option value="PC">Islas Pitcairn</option>
+<option value="PE">Per&#250;</option>
+<option value="PF">Islas Paracelso</option>
+<option value="PG">Islas Spratly</option>
+<option value="PK">Pakist&#225;n</option>
+<option value="PL">Polonia</option>
+<option value="PM">Panam&#225;</option>
+<option value="PO">Portugal</option>
+<option value="PP">Papua Nueva Guinea</option>
+<option value="PS">Palau</option>
+<option value="PU">Guinea Bissau</option>
+<option value="QA">Qatar</option>
+<option value="RE">Reuni&#243;n</option>
+<option value="RM">Islas Marshall</option>
+<option value="RN">San Mart&#237;n</option>
+<option value="RO">Rumania</option>
+<option value="RP">Filipinas</option>
+<option value="RQ">Puerto Rico</option>
+<option value="RS">Rusia</option>
+<option value="RW">Rwanda</option>
+<option value="SA">Arabia Saudita</option>
+<option value="SB">San Pedro y Miquel&#243;n</option>
+<option value="SC">San Crist&#243;bal y Nieves</option>
+<option value="SE">Seychelles</option>
+<option value="SF">Sud&#225;frica</option>
+<option value="SG">Senegal</option>
+<option value="SH">Santa Elena</option>
+<option value="SI">Eslovenia</option>
+<option value="SL">Sierra Leona</option>
+<option value="SM">San Marino</option>
+<option value="SN">Singapur</option>
+<option value="SO">Somalia</option>
+<option value="SP">Espa&#241;a</option>
+<option value="SR">Serbia</option>
+<option value="ST">Santa Luc&#237;a</option>
+<option value="SU">Sud&#225;n</option>
+<option value="SV">Svalbard</option>
+<option value="SW">Suecia</option>
+<option value="SX">Islas Georgias del Sur y S&#225;ndwich del Sur</option>
+<option value="SY">Siria</option>
+<option value="SZ">Suiza</option>
+<option value="TB">San Bartolom&#233;</option>
+<option value="TD">Trinidad y Tobago</option>
+<option value="TE">Isla Tromelin</option>
+<option value="TH">Tailandia</option>
+<option value="TI">Tayikist&#225;n</option>
+<option value="TK">Islas Turcas y Caicos</option>
+<option value="TL">Tokelau</option>
+<option value="TN">Tonga</option>
+<option value="TO">Togo</option>
+<option value="TP">Santo Tom&#233; y Pr&#237;ncipe</option>
+<option value="TS">T&#250;nez</option>
+<option value="TT">Timor Oriental</option>
+<option value="TU">Turqu&#237;a</option>
+<option value="TV">Tuvalu</option>
+<option value="TW">Taiw&#225;n</option>
+<option value="TX">Turkmenist&#225;n</option>
+<option value="TZ">Tanzania</option>
+<option value="U2">Zona neutral</option>
+<option value="U3">Ap&#225;trida</option>
+<option value="UG">Uganda</option>
+<option value="UK">Reino Unido</option>
+<option value="UP">Ucrania</option>
+<option value="US">Estados Unidos</option>
+<option value="UV">Burkina Faso</option>
+<option value="UY">Uruguay</option>
+<option value="UZ">Uzbekist&#225;n</option>
+<option value="VC">San Vicente y las Granadinas</option>
+<option value="VE">Venezuela</option>
+<option value="VI">Islas V&#237;rgenes Brit&#225;nicas</option>
+<option value="VM">Vietnam</option>
+<option value="VT">Ciudad del Vaticano</option>
+<option value="WA">Namibia</option>
+<option value="WE">Ribera Occidental</option>
+<option value="WF">Wallis y Futuna</option>
+<option value="WI">Sahara Occidental</option>
+<option value="WS">Samoa</option>
+<option value="WZ">Swazilandia</option>
+<option value="YM">Yemen</option>
+<option value="ZA">Zambia</option>
+<option value="ZI">Zimbabwe</option>
+</select> <br>
+</p>
+	<p><span class="star">*</span>Año de nacimiento</p>
+	<p><input type="text" name="name" value><br>
+	<p><span class="star">*</span>¿Con qué necesitas ayuda?</p>
+<select name="names">
+	<option value=""></option>
+	<option value="General English Program">Programas de ingl&#233;s general</option>
+<option value="EAP">Programas de ingl&#233;s acad&#233;mico</option>
+<option value="University Admissions">Admisiones a la universidad</option>
+<option value="Business Communication Programs">Programas de comunicaci&#243;n de negocios</option>
+<option value="Youth Programs">Programas para j&#243;venes</option>
+<option value="How to Apply">C&#243;mo presentar tu solicitud</option>
+<option value="Prices and Quotes">Precios y cotizaciones</option>
+<option value="Admissions">Admisiones</option>
+<option value="Housing">Alojamiento</option>
+<option value="Visas">Visas</option>
+<option value="iELTS">iELTS</option>
+<option value="CELTA">CELTA</option>
+<option value="TEFL">TEFL</option>
+<option value="ToEFL">ToEFL</option>
+<option value="New Agent">Nuevo agente</option>
+<option value="Jobs">Trabajos</option>
+<option value="Other">Otro</option>
+</select>
+
+	<p><span class="star">*</span>¿En dónde te gustaría estudiar?</p>
+	<select name="country">
+	<option value=""></option>
+	<option value="EE. UU.">EE. UU.</option>
+	<option value="Australia">Australia</option>
+	<option value="Canada">Canada</option>
+	<option value="India">India</option>
+	</select>
+	<div class="tableRow">
+	<input type="checkbox" name="same" value="Acepto" required>Acepto Ios 
+	<a href="#">Términos de uso</a> y la <a  href="#">
+		 Política de privacidad</a>
+		 </div>
+		 <div class="but">
+			 
+<input class="button" type="submit" value="ENVIAR">
+</div>
+</div>
+</form>
+
+
+<p class="b"></p>
+    <div class="paragraph">
+   <p>La capacidad de comunicarse eficazmente en inglés es un factor 
+    crucial para poder aprovechar al máximo las oportunidades educativas y laborales que te esperan.</p>
+<p>
+Desde 1961, ELS ha sido el principal proveedor de programas de inglés en 
+los campus universitarios y en apasionantes centros de ciudades de los 
+Estados Unidos. Nuestro programa de Inglés con Fines Académicos ya está 
+disponible en centros ELS de Australia, Canadá, India, Malasia y Panamá, 
+así como en más de sesenta ubicaciones tan solo en los Estados Unidos.</p>
+<p>
+ELS te ofrece una variedad de programas para ayudarte a adquirir las 
+habilidades de inglés que hoy en día son esenciales para lograr el éxito 
+académico y profesional; experiencias llenas de descubrimientos y aventura, 
+nuevas amistades y culturas, aprendizaje y logros.
+</p>
+<p> </p>
+<p><span class="h3">INGLÉS CON FINES ACADÉMICOS</span></p>
+<p>
+Para aquellos estudiantes que desean ser admitidos a una universidad o 
+institución de educación superior, al terminar con éxito el Nivel 109 o 
+112 del programa de Inglés con Fines Académicos (EAP), reciben un certificado 
+oficial reconocido por más de 650 universidades e instituciones de educación 
+superior que confirma que han adquirido el dominio del idioma inglés requerido para la admisión.</p>
+<p>
+Además de enfocarse en la comprensión oral, práctica conversacional, lectura, 
+ escritura, habilidades de pronunciación y gramática del inglés, el plan de estudios 
+ del programa Inglés con Fines Académicos de ELS también desarrolla aptitudes en otras áreas como:
+</p>
+<ul>
+    <li>Pensamiento crítico</li>
+    <li>
+    Presentaciones
+    </li>
+    <li>Toma de notas</li>
+    <li>
+    Investigación académica
+    </li>
+    <li>y mucho más…
+    </li>
+</ul>
+<p>Las clases de la mañana constan de:</p>
+<ul>
+
+ <li>
+    Práctica conversacional y estructura en la comunicación o estudios del idioma</li>
+    <li>
+    Enriquecimiento del vocabulario (Niveles 101 – 109) o clases 
+    para mejorar habilidades (solo para nivel Máster)
+    </li>
+    <li>Una clase en nuestro Centro de Idioma y Tecnología (LTC)
+    </li>
+</ul>
+<p>Las clases de la tarde se dedican a la lectura y la escritura.</p>
+<p>
+¡Interactúa en América! regularmente te brinde con la oportunidad de 
+ reunirte con hablantes nativos de inglés y escuchar a oradores invitados.</p>
+<p><a href="#"></a></p>
+<p><span class="h3"> </span></p>
+<p><span class="h3">INGLÉS GENERAL
+</span></p>
+<p>Para cualquier persona que está buscando mejorar los conocimientos
+de inglés que se necesitan para comunicarse de forma precisa y eficaz.
+</p>
+<p>El programa incluye el desarrollo intensivo de habilidades en las siguientes áreas:
+</p>
+<ul>
+    <li>Comprensión oral</li>
+    <li>
+    Pronunciación</li>
+    <li>
+    Gramática</li>
+    <li>
+    Práctica conversacional</li>
+    <li>
+    Vocabulario
+    </li>
+</ul>
+<p>Las clases de la mañana constan de:
+</p>
+<ul>
+    <li>Práctica conversacional y estructura en la comunicación o estudios del idioma</li>
+    <li>
+    Enriquecimiento del
+
+vocabulario
+    </li>
+    <li>Clase para mejorar habilidades por la mañana en vez de Enriquecimiento del vocabulario (niveles Máster)
+    </li>
+    <li>Una clase en nuestro Centro de Idioma y Tecnología (LTC)
+    </li>
+</ul>
+<p>En todos los niveles, las tardes se dedican a clases para mejorar habilidades, 
+como modismos utilizados en los Estados Unidos, cinematografía estadounidense, actualidades y cultura estadounidense.*</p>
+<p>
+¡Interactúa en América! regularmente te brinde con la oportunidad de reunirte con 
+hablantes nativos de inglés y escuchar a oradores invitados. La conversación se practica usando inglés práctico de la vida real.
+</p>
+<p>*Pueden variar los cursos exactos ofrecidos en cada centro.</p>
+<p><span class="h3"> </span></p>
+<p><span class="h3">INGLÉS SEMI-INTENSIVO
+</span></p>
+<p>
+Para aquellas personas que desean aprender inglés mientras exploran las ciudades y 
+los sitios de interés locales. Esto les permite practicar el inglés fuera del aula.</p>
+<p>
+Este programa incluye el desarrollo de importantes habilidades lingüísticas que 
+son necesarias para poderse comunicar de manera precisa y eficaz:</p>
+<ul>
+    <li>
+    Comprensión oral
+    </li>
+    <li>Pronunciación
+
+</li>
+    <li>Práctica conversacional</li>
+    <li>
+    Vocabulario
+    </li>
+</ul>
+<p>Las clases solo se imparten en las mañanas y sirven para construir una base de competencias para la comunicación. Incluyen:
+</p>
+<ul>
+    <li>Práctica conversacional y estructura en la comunicación o estudios del idioma
+    </li>
+    <li>Enriquecimiento del vocabulario</li>
+    <li>
+    Una clase en nuestro Centro de Idioma y Tecnología (LTC)</li>
+</ul>
+<p>
+¡Interactúa en América! regularmente te brinde con la oportunidad 
+de reunirte con hablantes nativos de inglés, escuchar a oradores 
+invitados y participar en excursiones locales.</p>
+<p>
+La conversación se practica usando inglés práctico de la vida real.
+</p>
+ </div>
+</div>
+</body>
+<footer>
+		<div id="footer">
+<div id="fp"><sup>&copy;</sup> Copyright 2018 ELS Educational Services, Inc., a <a href="">Berlitz company</a></div>
+<div id="links">
+<a href="">Acreditación</a>&nbsp;&nbsp;
+<a href="">Política de privacidad</a>&nbsp;&nbsp;
+<a href="">Términos</a>
+</div>
+</div>
+	</footer>
+</html>
